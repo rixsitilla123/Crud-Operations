@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operations Main Page</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }   
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+<body>
+    <div class="body-main">
+        <nav class="navbar__left">
+            <a class="navbar__left-logo" href="/">
+                <img src="./images/Logo.png" alt="logo" width="220" height="24">
+            </a>
+            <div class="navbar__left-card">
+                <label>
+                    <img class="navbar__card-img" onclick="changeImg()" src="./images/avatar.png" alt="" width="130" height="130">
+                    <input class="visually-hidden avatar-input-img" type="file">
+                </label>
+
+                <p class="navbar__name">
+                    Rixsitilla
+                </p>
+                <p class="navbar__left-card-text">
+                    Admin
+                </p>
+                <a class="navbar__left-btn" href="#">
+                    <img src="./images/stundent-btn-img.png" alt="" width="20" height="16">
+                    Students
+                </a>
+            </div>
+            <div class="navbar__left-btn-wrap">
+                <p class="navbar__left-btn-text">
+                    Logout
+                </p>
+                <button class="navbar__left-bottom-btn" type="button">
+                    <img src="./images/logout-btn.png" alt="logout button" width="17" height="13">
+                </button>
+            </div>
+        </nav>
+        <div class="right-body">
+            <div class="right__top">
+                <div class="right__top-img">
+                    <img src="./images/right-top-img1.png" alt="prev" width="18" height="18">
+                </div>
+                <div class="right__top-search-wrap">
+                    <input class="right__top-input" type="search" autocomplete="off" placeholder="Search...">
+                    <img class="right__top-bell" src="./images/right-top-img2.png " alt="bell" width="17" height="20">
+                </div>
+            </div>
+            <div class="student__list">
+                <div class="student__list-top">
+                    <h3 class="student__list-title">
+                        Students list
+                    </h3>
+                    <div class="student__list-add-sort">
+                        <img class="student__list-sort" src="./images/sort-img.svg" alt="sort img" width="14" height="22">
+                        <button class="student__list-add">
+                            ADD NEW STUDENT
+                        </button>
+                    </div>
+                    <div class="modal-wrapper">
+                        <div class="modal"></div>
+                    </div>
+                </div>
+                <table class="student__list-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Phone
+                            </th>
+                            <th>
+                                Enroll Number
+                            </th>
+                            <th>
+                                Data Admission
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody gap-10px"></tbody>
+                </table>
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        }
+    }
+</script>
+<script src="./js/table.js"></script>
+</html>

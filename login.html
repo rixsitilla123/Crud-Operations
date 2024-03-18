@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curd Operations Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="form-top">
+            <div class="form__top-title-wrap">
+                <span class="form__top-span"></span>
+                <h2 class="form__top-title">
+                    CRUD OPERATIONS
+                </h2>
+            </div>
+            <div class="form__top-sign-wrap">
+                <h4 class="form__top-sign">
+                    SIGN IN
+                </h4>
+                <p class="form__top-text">
+                    Enter your credentials to access your account
+                </p>
+            </div>
+        </div>
+        <form class="form-wrap">
+            <label class="form__wrap-l">
+                <span class="form__wrap-span">
+                    Email
+                </span>
+                <input class="form__wrap-email" type="email" name="email" autocomplete="off" required placeholder="Enter your email">
+            </label>
+            <label class="form__wrap-l">
+                <span class="form__wrap-span">
+                    Password
+                </span>
+                <input class="form__wrap-password" type="password" name="password" autocomplete="off" required placeholder="Enter your password">
+            </label>
+            <button class="form__wrap-btn" type="submit">
+                SIGN IN
+            </button>
+        </form>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+</html>
